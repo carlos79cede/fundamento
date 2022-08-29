@@ -1,0 +1,28 @@
+Algoritmo ingreseelpromedio
+	definir parcial1,parcial2,parcial3,parcial4,promedio como real
+	escribir "ingresar parcial1"
+	leer parcial1
+	Escribir "ingresar parcial2"
+	Leer parcial2
+	Escribir "ingresar parcial3"
+	leer parcial3
+	Escribir "ingresar parcial4"
+	leer parcial4
+	Escribir "ingresar promedio"
+	si ((parcial1>=0)y(parcial1<=10)&(parcial2>=0)&(parcial2<=10)&(parcial3>=0)&(parcial3<=10)&(parcial4>=0)&(parcial4<=10))
+		entonces promedio=(parcial1+parcial2+parcial3+parcial4)/4
+		si(promedio>=6 & promedio<=10)Entonces
+			Escribir "aprobado:"
+			si(promedio>=5 & promedio <6)entonces
+				Escribir "derecho a extraordinario:"
+			sino 
+				si(promedio>=2 & promedio<5)entonces 
+					Escribir "derecho a titulo:"
+				sino 
+					Escribir "sin derecho a titulo:"
+				FinSi
+			FinSi
+		FinSi
+		Escribir "no cumple:"
+	FinSi 
+FinAlgoritmo
