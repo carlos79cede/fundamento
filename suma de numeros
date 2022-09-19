@@ -1,0 +1,22 @@
+// 10.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+void main ()
+{
+	int N, acumulador, x;
+	cout<<"ingrese el numero"<<endl;
+	cin>>N;
+	while(N<0)
+	{
+		x=(n%10);
+		N=(N/10);
+		acumulador=(acumulador+x);
+	}
+    cout<<"la suma de los digitos"<<acumulador;
+	getch();
+}
