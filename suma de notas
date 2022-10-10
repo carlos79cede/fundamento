@@ -1,0 +1,56 @@
+// ciclos.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+float notas (float np, float p1, float p2, float p3, float ef);//prototipo
+	
+void main() 
+{
+	int i,id, n;
+	float np, p1, p2, p3, ef, nf,suma=0;
+	
+
+	cout<<"ingresar el numero de alumnos: ";
+	cin>> n;
+	for(i=1;i<=n;i++)
+	{
+		cout<<"ingrese la ID del estudiante:";
+		cin>>id;
+
+		cout<<"introduzca la nota practica:";
+		cin>> np;
+
+		cout<<"introduzca la nota del parcial 1: ";
+		cin>> p1;
+
+		cout<<"introduzca la nota del parcial 2: ";
+		cin>> p2;
+
+		cout<<"introduzca la nota del parcial 3: ";
+		cin>> p3;
+
+		cout<<"introduzca la nota del examen final:";
+		cin>> ef;
+		nf=notas(np,p1,p2,p3,ef);
+		suma=suma+nf;
+		cout<<"la nota final es:" <<nf<<endl;
+	
+	}
+	    cout<<"la suma de estudiantes : "<<suma/n<<endl;
+	getch();
+
+ 
+}
+
+float notas (float np, float p1, float p2, float p3, float ef)
+{
+	float calculodenotas;
+	calculodenotas=np*0.2+((p1+p2+p3)/3)*0.4+ef*0.4;
+	return calculodenotas;
+}
+
